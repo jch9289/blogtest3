@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 가장 핫한 생성형 멀티모달 AI 모델 비교 분석</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .model-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .model-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.15);
+        }
+        .chart-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .metric-badge {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+        }
+        .section-title {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="gradient-bg text-white py-12 px-8 rounded-2xl card-shadow mb-8">
+                <h1 class="text-4xl font-bold mb-4">2025년 가장 핫한 생성형 멀티모달 AI 모델 비교 분석</h1>
+                <p class="text-xl opacity-90">GPT-4o vs Claude 4 Sonnet vs Gemini 2.5 Pro</p>
+                <div class="mt-6 flex justify-center space-x-6 text-sm">
+                    <span><i class="fas fa-chart-line mr-2"></i>성능 벤치마크</span>
+                    <span><i class="fas fa-dollar-sign mr-2"></i>가격 분석</span>
+                    <span><i class="fas fa-cogs mr-2"></i>기능 비교</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-6"><i class="fas fa-fire mr-3 text-red-500"></i>주요 경쟁 모델 3선</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="model-card bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-l-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">G</div>
+                            <div>
+                                <h3 class="font-bold text-lg">OpenAI GPT-4o</h3>
+                                <p class="text-sm text-gray-600">2024년 5월 출시</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700">실시간 멀티모달 추론에 특화된 옴니 모델</p>
+                        <div class="mt-4 space-y-1">
+                            <div class="flex justify-between text-xs">
+                                <span>수학 추론</span>
+                                <span class="font-semibold text-green-600">88.9%</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span>시각적 추론</span>
+                                <span class="font-semibold text-green-600">82.9%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-card bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-l-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">C</div>
+                            <div>
+                                <h3 class="font-bold text-lg">Claude 4 Sonnet</h3>
+                                <p class="text-sm text-gray-600">2025년 5월 22일 출시</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700">코딩과 도구 사용에서 압도적 성능</p>
+                        <div class="mt-4 space-y-1">
+                            <div class="flex justify-between text-xs">
+                                <span>코딩 능력</span>
+                                <span class="font-semibold text-purple-600">72.7%</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span>도구 사용</span>
+                                <span class="font-semibold text-purple-600">80.5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-l-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">G</div>
+                            <div>
+                                <h3 class="font-bold text-lg">Gemini 2.5 Pro</h3>
+                                <p class="text-sm text-gray-600">2025년 5월 6일 출시</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700">씽킹 모델로 복잡한 추론 문제 해결에 특화</p>
+                        <div class="mt-4 space-y-1">
+                            <div class="flex justify-between text-xs">
+                                <span>컨텍스트 윈도우</span>
+                                <span class="font-semibold text-blue-600">1M+ 토큰</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span>가격 경쟁력</span>
+                                <span class="font-semibold text-blue-600">최고</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comprehensive Comparison -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-6"><i class="fas fa-chart-bar mr-3 text-blue-500"></i>종합 비교 분석</h2>
+                <div class="chart-container">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/jupyter/tooluse_wAj6pYZ7Q2WLVavY-5t0-w/multimodal_ai_comparison_infographic_fixed.png" alt="멀티모달 AI 모델 종합 비교" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Benchmarks -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-6"><i class="fas fa-trophy mr-3 text-yellow-500"></i>성능 벤치마크 비교</h2>
+                <div class="chart-container mb-6">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/jupyter/tooluse_wAj6pYZ7Q2WLVavY-5t0-w/performance_comparison_fixed.png" alt="성능 비교 차트" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-yellow-50 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 flex items-center"><i class="fas fa-calculator mr-2 text-yellow-600"></i>수학 추론 (AIME 2025)</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>GPT-4o</span>
+                                <span class="metric-badge text-white px-3 py-1 rounded-full text-sm font-bold">88.9%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Claude 4</span>
+                                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">85.0%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Gemini 2.5 Pro</span>
+                                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">83.0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 flex items-center"><i class="fas fa-code mr-2 text-purple-600"></i>코딩 능력 (SWE-bench)</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>Claude 4</span>
+                                <span class="metric-badge text-white px-3 py-1 rounded-full text-sm font-bold">72.7%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>GPT-4o</span>
+                                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">69.1%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Gemini 2.5 Pro</span>
+                                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">63.2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 flex items-center"><i class="fas fa-eye mr-2 text-green-600"></i>시각적 추론 (MMMU)</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span>GPT-4o</span>
+                                <span class="metric-badge text-white px-3 py-1 rounded-full text-sm font-bold">82.9%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Gemini 2.5 Pro</span>
+                                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">79.6%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Claude 4</span>
+                                <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">74.4%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Analysis -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-6"><i class="fas fa-dollar-sign mr-3 text-green-500"></i>가격 경쟁력 분석</h2>
+                <div class="chart-container mb-6">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/jupyter/tooluse_wAj6pYZ7Q2WLVavY-5t0-w/pricing_comparison_fixed.png" alt="가격 비교 차트" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">입력 토큰당 비용 (백만 토큰 기준)</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                                <span>Gemini 2.5 Pro</span>
+                                <span class="text-green-600 font-bold">$1.25 (가장 저렴)</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                                <span>Claude 4 Sonnet</span>
+                                <span class="font-semibold">$3.00</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                                <span>GPT-4o</span>
+                                <span class="font-semibold">$5.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">출력 토큰당 비용</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                                <span>Gemini 2.5 Pro</span>
+                                <span class="text-green-600 font-bold">$10.00 (가장 저렴)</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                                <span>Claude 4 Sonnet</span>
+                                <span class="font-semibold">$15.00</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                                <span>GPT-4o</span>
+                                <span class="font-semibold">$20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context Window & Multimodal -->
+        <section class="mb-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 card-shadow">
+                    <h2 class="text-xl font-bold section-title mb-6"><i class="fas fa-memory mr-3 text-indigo-500"></i>컨텍스트 윈도우 용량</h2>
+                    <div class="chart-container">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/jupyter/tooluse_wAj6pYZ7Q2WLVavY-5t0-w/context_window_comparison_fixed.png" alt="컨텍스트 윈도우 비교" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="mt-6 space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-semibold">Gemini 2.5 Pro</span>
+                            <span class="text-blue-600 font-bold">1M+ 토큰</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                            <span class="font-semibold">Claude 4</span>
+                            <span class="font-semibold">200K 토큰</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                            <span class="font-semibold">GPT-4o</span>
+                            <span class="font-semibold">128K 토큰</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 card-shadow">
+                    <h2 class="text-xl font-bold section-title mb-6"><i class="fas fa-layer-group mr-3 text-orange-500"></i>멀티모달 지원 능력</h2>
+                    <div class="chart-container">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/jupyter/tooluse_wAj6pYZ7Q2WLVavY-5t0-w/multimodal_comparison_fixed.png" alt="멀티모달 능력 비교" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="font-semibold mb-4">지원하는 입력 타입:</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg">
+                                <span class="font-semibold">GPT-4o & Gemini 2.5 Pro</span>
+                                <div class="flex space-x-2 text-sm">
+                                    <span class="bg-green-200 px-2 py-1 rounded">텍스트</span>
+                                    <span class="bg-green-200 px-2 py-1 rounded">이미지</span>
+                                    <span class="bg-green-200 px-2 py-1 rounded">오디오</span>
+                                    <span class="bg-green-200 px-2 py-1 rounded">비디오</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-purple-50 rounded-lg">
+                                <span class="font-semibold">Claude 4</span>
+                                <div class="flex space-x-2 text-sm">
+                                    <span class="bg-purple-200 px-2 py-1 rounded">텍스트</span>
+                                    <span class="bg-purple-200 px-2 py-1 rounded">이미지</span>
+                                    <span class="bg-gray-200 px-2 py-1 rounded text-gray-500">오디오 ✗</span>
+                                    <span class="bg-gray-200 px-2 py-1 rounded text-gray-500">비디오 ✗</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Strengths -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-8"><i class="fas fa-medal mr-3 text-gold-500"></i>각 모델의 강점 요약</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 text-green-800">GPT-4o의 강점</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i><strong>수학적 추론</strong>에서 최고 성능 (AIME 88.9%)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i><strong>시각적 추론</strong>에서 압도적 (MMMU 82.9%)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i><strong>완전한 멀티모달 지원</strong> (텍스트, 이미지, 오디오, 비디오)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i><strong>실시간 상호작용</strong>에 최적화</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 text-purple-800">Claude 4 Sonnet의 강점</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i><strong>코딩 능력</strong>에서 최강 (SWE-bench 72.7%)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i><strong>도구 사용</strong> 능력이 탁월 (TAU-bench 80.5%)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i><strong>터미널 조작</strong> 작업에서 압도적 성능</li>
+                            <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i><strong>복잡한 프로그래밍</strong> 문제 해결에 특화</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 text-blue-800">Gemini 2.5 Pro의 강점</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i><strong>가격 경쟁력</strong> 최고 (입력 $1.25, 출력 $10)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i><strong>컨텍스트 윈도우</strong> 압도적 (1M+ 토큰)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i><strong>씽킹 모델</strong>로 복잡한 추론에 특화</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i><strong>LMArena 리더보드</strong> 1위 달성</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-8"><i class="fas fa-target mr-3 text-red-500"></i>사용 시나리오별 추천</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500">
+                        <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fas fa-laptop-code mr-2 text-purple-600"></i>코딩 및 개발</h3>
+                        <p class="text-purple-800 font-semibold">1위: Claude 4</p>
+                        <p class="text-sm text-gray-600 mt-2">코딩 벤치마크에서 압도적 성능</p>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
+                        <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fas fa-calculator mr-2 text-green-600"></i>수학 및 과학 연구</h3>
+                        <p class="text-green-800 font-semibold">1위: GPT-4o</p>
+                        <p class="text-sm text-gray-600 mt-2">수학적 추론과 시각적 분석에 강함</p>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                        <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fas fa-file-alt mr-2 text-blue-600"></i>긴 문서 처리</h3>
+                        <p class="text-blue-800 font-semibold">1위: Gemini 2.5 Pro</p>
+                        <p class="text-sm text-gray-600 mt-2">1M+ 토큰으로 대용량 문서 처리 가능</p>
+                    </div>
+
+                    <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                        <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fas fa-coins mr-2 text-yellow-600"></i>비용 효율성</h3>
+                        <p class="text-yellow-800 font-semibold">1위: Gemini 2.5 Pro</p>
+                        <p class="text-sm text-gray-600 mt-2">가장 저렴한 가격으로 높은 성능 제공</p>
+                    </div>
+
+                    <div class="bg-indigo-50 p-6 rounded-xl border-l-4 border-indigo-500">
+                        <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fas fa-video mr-2 text-indigo-600"></i>멀티미디어 작업</h3>
+                        <p class="text-indigo-800 font-semibold">공동 1위: GPT-4o & Gemini 2.5 Pro</p>
+                        <p class="text-sm text-gray-600 mt-2">완전한 멀티모달 지원</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2025 Trends -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl p-8 card-shadow">
+                <h2 class="text-2xl font-bold section-title mb-6"><i class="fas fa-chart-line mr-3 text-teal-500"></i>2025년 트렌드 전망</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg">
+                            <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
+                            <div>
+                                <h3 class="font-bold text-pink-800">씽킹 모델의 부상</h3>
+                                <p class="text-sm text-gray-600">복잡한 추론 능력이 핵심 차별화 요소</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-gradient-to-r from-indigo-50 to-indigo-100 rounded-lg">
+                            <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                            <div>
+                                <h3 class="font-bold text-indigo-800">멀티모달 완성도</h3>
+                                <p class="text-sm text-gray-600">텍스트, 이미지, 오디오, 비디오 통합 처리</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-lg">
+                            <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                            <div>
+                                <h3 class="font-bold text-emerald-800">컨텍스트 확장</h3>
+                                <p class="text-sm text-gray-600">더 긴 대화와 문서 처리 능력 경쟁</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-gradient-to-r from-amber-50 to-amber-100 rounded-lg">
+                            <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold">4</div>
+                            <div>
+                                <h3 class="font-bold text-amber-800">비용 효율성</h3>
+                                <p class="text-sm text-gray-600">성능 대비 가격 경쟁력이 선택의 핵심</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-12">
+            <div class="gradient-bg text-white p-8 rounded-xl card-shadow">
+                <h2 class="text-2xl font-bold mb-6 text-center"><i class="fas fa-lightbulb mr-3"></i>결론</h2>
+                <div class="text-center max-w-4xl mx-auto">
+                    <p class="text-lg mb-6">각 모델은 고유한 강점을 가지고 있어, <strong>사용 목적에 따른 선택</strong>이 중요합니다.</p>
+                    <div class="grid md:grid-cols-3 gap-6 text-sm">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <i class="fas fa-code text-2xl mb-2"></i>
+                            <p><strong>코딩</strong>에는 <strong>Claude 4</strong></p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <i class="fas fa-flask text-2xl mb-2"></i>
+                            <p><strong>수학/과학</strong>에는 <strong>GPT-4o</strong></p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <i class="fas fa-dollar-sign text-2xl mb-2"></i>
+                            <p><strong>비용 효율성</strong>에는 <strong>Gemini 2.5 Pro</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 text-sm">
+            <div class="border-t pt-6">
+                <p class="mb-2">📊 데이터 출처:</p>
+                <p class="mb-1">• Google Blog - Gemini 2.5</p>
+                <p class="mb-1">• Analytics Vidhya - AI 모델 비교</p>
+                <p class="mb-4">• LMArena 리더보드</p>
+                <p class="text-xs text-gray-500">2025년 6월 기준 정보 / 성능은 지속적으로 업데이트됩니다</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
